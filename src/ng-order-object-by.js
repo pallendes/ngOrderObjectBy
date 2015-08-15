@@ -17,6 +17,10 @@
             var comparator;
             var reducedA = field.split('.').reduce(index, a);
             var reducedB = field.split('.').reduce(index, b);
+            
+            reducedA = angular.lowercase(reducedA);
+            reducedB = angular.lowercase(reducedB);
+            
             if (reducedA === reducedB) {
               comparator = 0;
             } else {
